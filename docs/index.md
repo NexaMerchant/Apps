@@ -32,3 +32,7 @@ NexaMerchant Apps is a powerful application that allows you to manage your apps.
 
 To install NexaMerchant Apps, you can follow the steps below:
 
+## Api Reference
+
+- [Apps](api.md)
+
