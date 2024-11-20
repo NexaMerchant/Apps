@@ -13,7 +13,7 @@ return [
      */
     [
         'key'        => 'Apps',
-        'name'       => 'apps::app.apps.demo',
+        'name'       => 'Apps::app.apps.demo',
         'route'      => 'apps.admin.example.demo',
         'sort'       => 1,
         'icon'       => 'icon-dashboard',
@@ -21,11 +21,11 @@ return [
     ],
     [
         'key'        => 'Apps.Settings',
-        'name'       => 'apps::app.apps.Settings',
+        'name'       => 'Apps::app.apps.Settings',
         'route'      => 'apps.admin.apps.setting',
         'sort'       => 2,
         'icon'       => 'icon-dashboard',
-        'permission' => 'apps.admin.settings.index',
+        'permission' => 'Apps.admin.settings.index',
     ]
     // ],
     // [

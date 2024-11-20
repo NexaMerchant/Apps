@@ -37,6 +37,9 @@ class AppsServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/../Resources/views', 'Apps');
 
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
+
+        // register the apps auth middleware
+        $router->aliasMiddleware('apps', \NexaMerchant\Apps\Http\Middleware\Authenticate::class);
         
 
         /*
