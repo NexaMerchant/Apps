@@ -40,6 +40,9 @@
             "aliases": {}
         }
     },
-    "homepage": "https://nexamerchant.github.io/docs/",
+    "homepage": "https://nexamerchant.github.io/Apps/",
+    "support": {
+        "email": "nice.lizhi@gmail.com"
+    },
     "minimum-stability": "stable"
 }
