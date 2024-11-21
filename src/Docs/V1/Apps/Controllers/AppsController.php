@@ -58,6 +58,45 @@ class AppsController extends Controller
     public function public(){}
 
     /**
+     * @OA\Post(
+     *     path="/api/v1/apps",
+     *     summary="Create an app",
+     *     description="Create an app",
+     *     operationId="createApp",
+     *     tags={"Apps"},
+     *     @OA\RequestBody(
+     *         required=true,
+     *         @OA\JsonContent(
+     *             @OA\Property(property="name", type="string"),
+     *             @OA\Property(property="version", type="string"),
+     *             @OA\Property(property="token", type="string"),
+     *             @OA\Property(property="status", type="string"),
+     *             @OA\Property(property="description", type="string"),
+     *             @OA\Property(property="author", type="string"),
+     *             @OA\Property(property="email", type="string"),
+     *             @OA\Property(property="url", type="string"),
+     *             @OA\Property(property="category", type="string"),
+     *             @OA\Property(property="tags", type="string"),
+     *             @OA\Property(property="price", type="number")
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="App created successfully",
+     *         @OA\JsonContent(
+     *             @OA\Property(property="success", type="boolean"),
+     *             @OA\Property(property="message", type="string")
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=400,
+     *         description="Bad request"
+     *     )
+     * )
+     */
+    public function createApp(){}
+
+    /**
      * @OA\Get(
      *     path="/api/v1/apps",
      *     summary="Get all apps",
