@@ -1,6 +1,6 @@
 <?php
 
-namespace NexaMerchant\Apps\Http\Controllers\Api\V1\Apps\Controllers;
+namespace NexaMerchant\Apps\Docs\V1\Apps\Controllers;
 
 class AppsController extends Controller
 {

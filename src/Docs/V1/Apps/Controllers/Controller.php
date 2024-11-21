@@ -1,5 +1,5 @@
 <?php
-namespace NexaMerchant\Apps\Docs\Controllers\Api\V1\Apps\Controllers;
+namespace NexaMerchant\Apps\Docs\V1\Apps\Controllers;
 
 /**
  * @OA\Info(
