@@ -62,6 +62,7 @@ class Create extends CommandInterface
         '.github/workflows',
         '.github/workflows/php.yml',
         'docs',
+        'docs/index.md',
         'composer.json',
         'README.md',
         'phpunit.xml',
@@ -234,6 +235,9 @@ class Create extends CommandInterface
             break;
             case 'LICENSE.md':
                 $content = file_get_contents(__DIR__.'/stubs/LICENSE.md.stub');
+            break;
+            case 'docs/index.md':
+                $content = file_get_contents(__DIR__.'/stubs/docs.index.md.stub');
             break;
 
             default:

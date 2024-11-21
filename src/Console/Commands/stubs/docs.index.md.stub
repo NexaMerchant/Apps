@@ -1,0 +1,14 @@
+# Nexa Merchant {{NAME}}
+
+{{NAME}} is a package for Nexa Merchant.
+
+## How to Install
+
+```
+composer require nexa-merchant/{{name}}
+```
+
+## How to Use
+
+[How to Use {{NAME}}](docs/how-to-use.md)
+
