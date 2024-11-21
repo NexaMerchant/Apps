@@ -12,12 +12,16 @@ class Create extends CommandInterface
     protected $AppName = null;
     protected $AppNameLower = null;
 
+    protected $docsDir = 'docs';
+
+    protected $apiSupport = false; // if true, will create api docs
+
     protected $dirList = [
         'src',
         'src/Config',
         'src/Config/menu.php',
         'src/Config/acl.php',
-        'src/Config/l5-swagger.php',
+      //  'src/Config/l5-swagger.php',
         'src/Database',
         'src/Database/Migrations',
         'src/Database/Seeds',
@@ -145,9 +149,15 @@ class Create extends CommandInterface
 
         // composer dump autoload
         exec('composer dump-autoload');
-
-
         $this->info("App $name created successfully");
+
+        if($this->confirm('Do you want to create api docs?')) {
+            $this->apiSupport = true;
+        }
+
+        if ($this->apiSupport) {
+            $this->createApiDocs();
+        }
         
     }
 
@@ -239,6 +249,9 @@ class Create extends CommandInterface
             case 'docs/index.md':
                 $content = file_get_contents(__DIR__.'/stubs/docs.index.md.stub');
             break;
+            case 'docs/api.md':
+                $content = file_get_contents(__DIR__.'/stubs/docs.api.md.stub');
+            break;
 
             default:
             break;
@@ -254,6 +267,14 @@ class Create extends CommandInterface
         if (!file_exists($file)) {
             file_put_contents($file, $content);
         }
+    }
+
+    public function createApiDocs() {
+        $this->info("Creating api docs");
+
+        $this->createFile('src/Config', 'l5-swagger.php', '');
+        $this->createFile('docs', 'api.md', '');
+
     }
 
     /** 
