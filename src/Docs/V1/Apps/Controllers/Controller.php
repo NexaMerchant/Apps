@@ -4,8 +4,8 @@ namespace NexaMerchant\Apps\Docs\V1\Apps\Controllers;
 /**
  * @OA\Info(
  *      version="1.0.4",
- *      title="NexaMerchant Admin Rest API Documentation",
- *      description="NexaMerchant Admin Rest API Documentation",
+ *      title="NexaMerchant Apps Rest API Documentation",
+ *      description="NexaMerchant Apps Rest API Documentation",
  *
  *      @OA\Contact(
  *          email="nice.lizhi@gmail.com"
@@ -14,12 +14,12 @@ namespace NexaMerchant\Apps\Docs\V1\Apps\Controllers;
  *
  * @OA\Server(
  *      url=APP_URL,
- *      description="NexaMerchant Admin End Rest API"
+ *      description="NexaMerchant Apps End Rest API"
  * )
  *
  * @OA\Tag(
  *     name="APPS",
- *     description="APPS Endpoints of Admin User"
+ *     description="APPS Endpoints of Apps User"
  * )
  */
 
