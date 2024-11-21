@@ -21,6 +21,10 @@ namespace NexaMerchant\Apps\Docs\V1\Apps\Controllers;
  *     name="APPS",
  *     description="APPS Endpoints of Apps User"
  * )
+ * @OA\Tag(
+ *   name="AUTH",
+ *   description="AUTH Endpoints of Apps User"
+ * )
  */
 
 class Controller
