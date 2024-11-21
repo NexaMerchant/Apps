@@ -86,4 +86,12 @@ jobs:
       # Run phpunit tests
       - name: Run tests
         run: ./vendor/bin/phpunit
+
+      # Run Docker nexamerchant image with environment variables
+      - name: Run Docker image
+        run: docker run -d -p 8080:80 --name nexamerchant nicesteven/nexamerchant:latest
+
+      # Docker image health check
+      - name: Health check
+        run: docker inspect --format='{{json .State.Health}}' nexamerchant
       
