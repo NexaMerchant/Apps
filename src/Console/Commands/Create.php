@@ -84,20 +84,20 @@ class Create extends CommandInterface
     public function handle()
     {
 
-        $name = $this->ask('Please Input your Apps Name?');
-        $this->info("Creating app: $name");
+        $name = $this->ask(trans('Apps::message.create.name'));
+        $this->info(trans('Apps::message.create.creating').": $name");
         
         $dir = $this->getBaseDir($name);
 
 
-        if (!$this->confirm('Do you wish to continue?')) {
+        if (!$this->confirm(trans('Apps::message.create.continue'))) {
             // ...
-            $this->error("App $name cannelled");
+            $this->error("App $name ".trans('Apps::message.create.cancelled'));
             return false;
         }
 
         if(!$this->checkOnelineAppName($name)) {
-            $this->error("App $name is not valid");
+            $this->error("App $name ".trans('Apps::message.create.invalid'));
             return false;
         }
 
@@ -270,7 +270,7 @@ class Create extends CommandInterface
     }
 
     public function createApiDocs() {
-        $this->info("Creating api docs");
+        $this->info(trans('Apps::message.create.api_docs'));
 
         $this->createFile('src/Config', 'l5-swagger.php', '');
         $this->createFile('docs', 'api.md', '');
