@@ -1,14 +1,11 @@
 # NexaMerchant/{{NAME}}
 
+[![Build Status](https://github.com/NexaMerchant/{{NAME}}/workflows/Laravel/badge.svg)](https://github.com/NexaMerchant/{{NAME}})
+[![Release](https://img.shields.io/github/release/NexaMerchant/{{NAME}}.svg?style=flat-square)](https://github.com/NexaMerchant/{{NAME}}/releases)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/Nexa-Merchant/{{NAME}}.svg?style=flat-square)](https://packagist.org/packages/Nexa-Merchant/{{NAME}})
+[![Total Downloads](https://img.shields.io/packagist/dt/Nexa-Merchant/{{NAME}}.svg?style=flat-square)](https://packagist.org/packages/Nexa-Merchant/{{NAME}})
+
 # How to Install
-
-
-```
-NexaMerchant\{{NAME}}\Providers\{{NAME}}ServiceProvider::class,
-```
-Add it to config/app.php $providers
-
-# How to Publish
 
 ```
 composer require nexa-merchant/{{name}}
