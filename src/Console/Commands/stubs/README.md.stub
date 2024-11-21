@@ -10,3 +10,39 @@
 ```
 composer require nexa-merchant/{{name}}
 ```
+
+# How to Uninstall
+
+```
+composer remove nexa-merchant/{{name}}
+```
+
+# How to Update
+
+```
+composer update nexa-merchant/{{name}}
+```
+
+# How to Publish
+
+```
+php artisan vendor:publish --provider="NexaMerchant\{{NAME}}\Providers\{{NAME}}ServiceProvider"
+```
+
+# How to Support
+
+If you need support, please contact us at nice.lizhi@gmail.com or open an issue on GitHub.
+
+# How to Contribute
+
+If you want to contribute to this package, please open a pull request on GitHub.
+
+# How to Report a Bug
+
+If you find a bug, please open an issue on GitHub.
+
+# How to Request a Feature
+
+If you have an idea for a new feature, please open an issue on GitHub.
+
+
