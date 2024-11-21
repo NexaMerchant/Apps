@@ -108,10 +108,10 @@ class Create extends CommandInterface
             mkdir($dir, 0777, true);
             //$this->info("App $name created successfully");
         } else {
-            $this->error("App $name already exists");
-            if (!$this->confirm('Do you wish to continue?')) {
+            $this->error("App $name ".trans('Apps::message.create.exists'));
+            if (!$this->confirm(trans('Apps::message.create.continue'))) {
                 // ...
-                $this->error("App $name cannelled");
+                $this->error("App $name ".trans('Apps::message.create.cancelled'));
                 return false;
             }
         }
@@ -149,9 +149,9 @@ class Create extends CommandInterface
 
         // composer dump autoload
         exec('composer dump-autoload');
-        $this->info("App $name created successfully");
+        $this->info("App $name ".trans('Apps::message.create.success'));
 
-        if($this->confirm('Do you want to create api docs?')) {
+        if($this->confirm(trans('Apps::message.create.api_docs'))) {
             $this->apiSupport = true;
         }
 
