@@ -5,7 +5,7 @@ namespace NexaMerchant\Apps\Helpers;
 use Illuminate\Support\Facades\Route;
 
 // This is a helper class for Apps
-class Apps
+final class Apps
 {
     // This is a helper function for Apps
     public static function routes()
@@ -22,6 +22,42 @@ class Apps
             Route::delete('apps/{id}', 'AppsController@destroy');
         });
     }
+
+    /**
+     * Get the locale of the entity
+     *
+     * @param  \Webkul\Core\Contracts\Channel  $entity
+     * @return string
+     */
+    public static function getLocale($entity)
+    {
+        $objectFirstItem = $entity->items->first();
+
+        return $objectFirstItem->additional['locale'] ?? 'en';
+    }
+
+    /**
+     * Get the previous locale
+     *
+     * @return string
+     */
+    public static function getPreviousLocale()
+    {
+        return core()->getCurrentLocale()->code;
+    }
+
+    /**
+     * Set the locale
+     *
+     * @param  string  $locale
+     * @return void
+     */
+    public static function setLocale($locale)
+    {
+        app()->setLocale($locale);
+    }
+    
+    
 
     
 }
