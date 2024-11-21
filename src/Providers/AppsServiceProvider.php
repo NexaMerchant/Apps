@@ -86,6 +86,11 @@ class AppsServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             dirname(__DIR__) . '/Config/Apps.php', 'Apps'
         );
+
+        // api docs
+        $this->mergeConfigFrom(
+            dirname(__DIR__) . '/Config/l5-swagger.php', 'l5-swagger.documentations'
+        );
         
     }
 
