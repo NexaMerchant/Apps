@@ -96,6 +96,70 @@ class AppsController extends Controller
      */
     public function createApp(){}
 
+
+    /**
+     * @OA\Get(
+     *     path="/api/v1/apps/search",
+     *     summary="Search apps",
+     *     description="Search apps by name, author, category, tags, etc.",
+     *     operationId="searchApps",
+     *     tags={"Apps"},
+     *     @OA\Parameter(
+     *         name="q",
+     *         in="query",
+     *         description="Search query",
+     *         required=true,
+     *         @OA\Schema(
+     *             type="string"
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="List of apps",
+     *         @OA\JsonContent(
+     *             @OA\Property(property="apps", type="array", @OA\Items(type="object"))
+     *         )
+     *     )
+     * )
+     */
+    public function search(){}
+
+    /**
+     * @OA\Get(
+     *     path="/api/v1/apps/categories",
+     *     summary="Get all categories",
+     *     description="Get a list of all categories",
+     *     operationId="getCategories",
+     *     tags={"Apps"},
+     *     @OA\Response(
+     *         response=200,
+     *         description="List of categories",
+     *         @OA\JsonContent(
+     *             @OA\Property(property="categories", type="array", @OA\Items(type="object"))
+     *         )
+     *     )
+     * )
+     */
+    public function category(){}
+
+    /**
+     * @OA\Get(
+     *     path="/api/v1/apps/types",
+     *     summary="Get all types",
+     *     description="Get a list of all types",
+     *     operationId="getTypes",
+     *     tags={"Apps"},
+     *     @OA\Response(
+     *         response=200,
+     *         description="List of types",
+     *         @OA\JsonContent(
+     *             @OA\Property(property="types", type="array", @OA\Items(type="object"))
+     *         )
+     *     )
+     * )
+     */
+    public function types(){}
+
     /**
      * @OA\Get(
      *     path="/api/v1/apps",
