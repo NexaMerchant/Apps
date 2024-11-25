@@ -17,12 +17,12 @@ return [
      * 
      * The version of the package
      */
-    'version' => '1.0.4',
+    'version' => '1.0.5',
     /**
      * 
      * The version number of the package
      */
-    'versionNum' => '104',
+    'versionNum' => '105',
 
     /**
      * 
