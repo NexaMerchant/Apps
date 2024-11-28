@@ -6,6 +6,11 @@
     "keywords": ["laravel", "apps", "nexa-merchant"],
     "suggest": {
         "nexa-merchant/apis": "NexaMerchant Apis",
+        "nexa-merchant/checkout": "NexaMerchant Checkout",
+        "nexa-merchant/notifications": "NexaMerchant Notifications",
+        "nexa-merchant/payments": "NexaMerchant Payments",
+        "nexa-merchant/reports": "NexaMerchant Reports",
+        "nexa-merchant/settings": "NexaMerchant Settings",
         "nexa-merchant/webhooks": "NexaMerchant Webhooks"
     },
     "authors": [
