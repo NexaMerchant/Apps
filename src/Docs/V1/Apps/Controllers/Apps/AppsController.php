@@ -2,7 +2,7 @@
 
 namespace NexaMerchant\Apps\Docs\V1\Apps\Controllers;
 
-class AppsController extends Controller
+class AppsController
 {
     /**
      * @OA\Post(
