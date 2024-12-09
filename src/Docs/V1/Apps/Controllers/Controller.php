@@ -13,7 +13,7 @@ namespace NexaMerchant\Apps\Docs\V1\Apps\Controllers;
  * )
  *
  * @OA\Server(
- *      url=APP_URL,
+ *      url="http://localhost:8000/api/v1",
  *      description="NexaMerchant Apps End Rest API"
  * )
  *
