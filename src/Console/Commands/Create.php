@@ -21,7 +21,7 @@ class Create extends CommandInterface
         'src/Config',
         'src/Config/menu.php',
         'src/Config/acl.php',
-      //  'src/Config/l5-swagger.php',
+        'src/Config/l5-swagger.php',
         'src/Database',
         'src/Database/Migrations',
         'src/Database/Seeds',
@@ -151,13 +151,7 @@ class Create extends CommandInterface
         exec('composer dump-autoload');
         $this->info("App $name ".trans('Apps::message.create.success'));
 
-        if($this->confirm(trans('Apps::message.create.api_docs'))) {
-            $this->apiSupport = true;
-        }
-
-        if ($this->apiSupport) {
-            $this->createApiDocs();
-        }
+        $this->createApiDocs(); // create api docs
         
     }
 
