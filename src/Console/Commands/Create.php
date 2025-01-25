@@ -265,8 +265,6 @@ class Create extends CommandInterface
 
     public function createApiDocs() {
         $this->info(trans('Apps::message.create.api_docs'));
-
-        $this->createFile('src/Config', 'l5-swagger.php', '');
         $this->createFile('docs', 'api.md', '');
 
     }
