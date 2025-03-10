@@ -43,6 +43,12 @@ return [
 
     /**
      * 
+     * The enable of the package
+     */
+    'enable' => env('{{NAME}}_ENABLE', true),
+
+    /**
+     * 
      * The author of the package
      */
     'author' => 'Steve',
