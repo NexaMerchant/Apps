@@ -89,6 +89,8 @@ class Create extends CommandInterface
         
         $dir = $this->getBaseDir($name);
 
+        $this->info("Creating app $name in $dir");
+
 
         if (!$this->confirm(trans('Apps::message.create.continue'))) {
             // ...
