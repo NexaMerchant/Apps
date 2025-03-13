@@ -28,7 +28,7 @@ return [
      *
      * Enabled
      */
-     'enable' => env('{{NAME}}_ENABLED', true),
+     'enable' => env('{{NAME}}_ENABLED', false),
 
      /*
       * Composer Package Name
