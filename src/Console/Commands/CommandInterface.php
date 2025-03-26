@@ -7,7 +7,7 @@ use GuzzleHttp\Client;
 abstract class CommandInterface extends Command
 {
 
-    abstract protected function getAppVer(); // app ver
+    abstract protected function getAppVer(); // app version
     abstract protected function getAppName(); //app name
 
     /**
