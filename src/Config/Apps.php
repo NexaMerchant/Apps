@@ -26,6 +26,12 @@ return [
 
     /**
      * 
+     * The description of the package
+     */
+    'description' => 'A package for managing apps',
+
+    /**
+     * 
      * The base directory of the package
      */
     'base_dir'  => env('APPS_BASE_DIR', 'apps'),
