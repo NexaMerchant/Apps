@@ -29,7 +29,8 @@ class CreatePlatform extends CommandInterface{
         // check source code
         $this->info('Check source code');
 
-        // check ssh
+        // check ssh use shell
+        $this->info('Check ssh');
 
         // check git
     }
