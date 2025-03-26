@@ -19,10 +19,18 @@ class CreatePlatform extends CommandInterface{
     private $source_code;
 
     protected $signature = 'apps:create:platform {name} {--ssh-host} {--ssh-port} {--ssh-user} {--ssh-password} {--ssh-key} {--git-url} {--git-branch} {--git-user} {--git-password} {--git-key} {--docker} {--kubernetes} {--source-code}';
-    protected $description = 'Create a new nexa platform use docker, kubernetes and souce code';
+    protected $description = 'Create a new nexa platform use docker, kubernetes and souce code {name} {--ssh-host} {--ssh-port} {--ssh-user} {--ssh-password} {--ssh-key} {--git-url} {--git-branch} {--git-user} {--git-password} {--git-key} {--docker} {--kubernetes} {--source-code}';
 
     public function __construct(){
         parent::__construct();
+    }
+
+    public function getAppVer() {
+        return config("apps.version");
+    }
+
+    public function getAppName() {
+        return config("apps.name");
     }
 
     public function handle(){
