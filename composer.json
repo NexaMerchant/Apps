@@ -20,7 +20,8 @@
         }
     ],
     "require": {
-        "laravel/framework": "~6.0||~7.0||~8.0||~9.0||~10.0||~11.0||~12.0"
+        "laravel/framework": "~6.0||~7.0||~8.0||~9.0||~10.0||~11.0||~12.0",
+        "phpseclib/phpseclib": "^3.0"
     },
     "require-dev": {
         "phpunit/phpcov": ">=6.0",
