@@ -9,7 +9,7 @@ class UnInstall extends CommandInterface
     protected $description = 'Uninstall an app';
 
     public function getAppVer() {
-        return config("apps.ver");
+        return config("apps.version");
     }
 
     public function getAppName() {

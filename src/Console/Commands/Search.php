@@ -12,7 +12,7 @@ class Search extends CommandInterface
     protected $type = null;
 
     public function getAppVer() {
-        return config("apps.ver");
+        return config("apps.version");
     }
 
     public function getAppName() {

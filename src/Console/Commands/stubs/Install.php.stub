@@ -19,7 +19,7 @@ class Install extends CommandInterface
     protected $description = 'Install {{NAME}} an app';
 
     public function getAppVer() {
-        return config("{{NAME}}.ver");
+        return config("{{NAME}}.version");
     }
 
     public function getAppName() {

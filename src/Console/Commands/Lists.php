@@ -11,7 +11,7 @@ class Lists extends CommandInterface
     protected $description = 'list an app';
 
     public function getAppVer() {
-        return config("Apps.ver");
+        return config("Apps.version");
     }
 
     public function getAppName() {

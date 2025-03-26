@@ -16,7 +16,7 @@ class Publish extends CommandInterface
 
 
     public function getAppVer() {
-        return config("Apps.ver");
+        return config("Apps.version");
     }
 
     public function getAppName() {

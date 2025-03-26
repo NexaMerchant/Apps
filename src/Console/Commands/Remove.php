@@ -13,7 +13,7 @@ class Remove extends CommandInterface
     protected $AppNameLower = null;
 
     public function getAppVer() {
-        return config("Apps.ver");
+        return config("Apps.version");
     }
 
     public function getAppName() {
