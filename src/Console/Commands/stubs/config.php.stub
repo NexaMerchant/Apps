@@ -24,11 +24,6 @@ return [
      */
     'versionNum' => '100',
 
-    /**
-     *
-     * Enabled
-     */
-     'enable' => env('{{NAME}}_ENABLED', false),
 
      /*
       * Composer Package Name
